@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.underline {
+  width: 30px;
+  height: 2px;
+  background: white;
+}
+
+/* nav section */
+
+.nav {
+  height: 7rem;
+  align-items: center;
+  transition: all 0.3s linear;
+  display: grid;
+  background: linear-gradient(to bottom right, red, blue);
+}
+
+.nav-logo {
+  display: grid;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navlinks {
+  display: none;
+}
+
+.nav-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.toggle-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  display: grid;
+  justify-content: right;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.sidebar-social {
+  display: none;
+  align-items: center;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+@media screen and (min-width: 765px) {
+  .nav-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navlinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.3rem;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  /*=================================================== 
+social icons
+======================================================= */
+
+  .social-icons a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(172, 170, 170);
+    font-size: 1rem;
+    transition: all 0.3s linear;
+    color: yellow;
+  }
+
+  .social-icons li {
+    list-style: none;
+    height: 1.5rem;
+    text-align: center;
+    margin-right: auto;
+    margin-top: .4rem;
+  }
+
+  .sidebar-social {
+    display: flex;
+  }
+
+  .social-icons {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    display: block;
+    justify-self: right;
+    margin-right: 2rem;
+  }
+
+  .social-icons a:hover {
+    color: rgb(118, 118, 248);
+  }
+}
+
+/*=================================================== 
+social title
+======================================================= */
+
+.social-title {
+  font-size: 0.9rem;
+  color: rgb(172, 170, 170);
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  color: yellowgreen;
+}
+
+.social-title,
+.social-icons {
+  margin-right: 1rem;
+}
+
+/*=================================================== 
+sidebar
+======================================================= */
+
+.sidebar {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(253, 248, 238);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s linear;
+  transform: translateX(-100%);
+  background: black;
+}
+
+.sidebar-appear {
+  transform: translateX(0%);
+}
+
+.sidebar-links {
+  font-size: 3rem;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  color: white;
+}
+
+.sidebar-links li {
+  margin-bottom: 3rem;
+  list-style: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: red;
+  background: transparent;
+  border: none;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.header {
+  min-height: 95vh;
+}
+
+/*=================================================== 
+Color Generator
+======================================================= */
+.color-show {
+  height: 45vh;
+  width: 100%;
+}
+.color-container {
+  height: 45vh;
+  margin: 3rem auto;
+  background: rgba(223, 239, 252, 0.315);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+  text-align: center;
+}
+
+.color-title {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  color: green;
+  text-transform: capitalize;
+}
+
+.span-1 {
+  color: pink;
+}
+
+.span-2 {
+  color: blue;
+}
+
+.span-3 {
+  color: orange;
+}
+
+.span-4 {
+  color: purple;
+}
+
+.span-5 {
+  color: turquoise;
+}
+
+.value {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: rgb(24, 23, 23);
+}
+
+.color-btn {
+  margin-top: 6rem;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  border: 2px solid gray;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.color-btn:hover {
+  background: blue;
+  color: white;
+}
+
+.color {
+  color: peru;
+}
+
+/*=================================================== 
+Hex Generator
+======================================================= */
+
+.hex-container {
+  height: 45vh;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  background: rgba(223, 239, 252, 0.315);
+}
+
+.hex-title {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+
+.value {
+  text-align: center;
+}
+
+.hex {
+  color: white;
+}
+
+.hex-btn {
+  margin-top: 6rem;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  border: 2px solid gray;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.hex {
+  color: peru;
+}
+.hex-btn:hover {
+  background: blue;
+  color: white;
+}
+
+/*=================================================== 
+Counter
+======================================================= */
+
+.count-section {
+  background: rgba(223, 239, 252, 0.315);
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.count-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  height: 40vh;
+  padding-bottom: 3rem;
+}
+
+.count-value {
+  font-size: 5rem;
+}
+
+.count-buttons {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 6rem;
+}
+
+.btn {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 40%;
+  filter: drop-shadow(0 3px 3px black);
+  border: 1px solid gray;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.increase,
+.decrease {
+  background: linear-gradient(rgba(81, 55, 196, 0.2), rgba(0, 0, 0, 0.2));
+  border: 2px solid gray;
+  font-size: 2rem;
+}
+
+.increase:hover {
+  background: rgba(0, 128, 0, 0.253);
+}
+
+.reset:hover {
+  background: rgba(243, 153, 111, 0.24);
+}
+
+.decrease:hover {
+  background: rgba(255, 0, 0, 0.363);
+}
