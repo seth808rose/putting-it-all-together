@@ -319,6 +319,8 @@ Counter
   position: relative;
   margin-bottom: 2rem;
   padding: 1rem;
+  align-items: center;
+  text-align: center;
 }
 
 .title {
