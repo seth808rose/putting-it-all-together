@@ -337,7 +337,7 @@ Counter
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   place-items: center;
-  margin: 1rem 1rem;
+  margin: 1rem auto;
 }
 
 .count-value {
