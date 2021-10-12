@@ -319,7 +319,6 @@ Counter
   position: relative;
   margin-bottom: 2rem;
   padding: 1rem;
-
 }
 
 .title {
@@ -349,7 +348,6 @@ Counter
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 6rem;
-  padding: 0 2rem;
 }
 
 .btn {
@@ -383,12 +381,16 @@ Counter
   background: rgba(255, 0, 0, 0.363);
 }
 
-@media screen and (max-width: 678px){
-  .btn{
+@media screen and (max-width: 678px) {
+  .btn {
     height: 2rem;
     width: 4rem;
     font-size: 1rem;
   }
 
+  .title {
+    font-size: 1.2rem;
+  }
 
+  
 }
