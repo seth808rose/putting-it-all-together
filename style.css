@@ -8,7 +8,7 @@
 .section-center {
   width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1200px;
 }
 .underline {
   width: 30px;
@@ -102,7 +102,7 @@ social icons
     height: 1.5rem;
     text-align: center;
     margin-right: auto;
-    margin-top: .4rem;
+    margin-top: 0.4rem;
   }
 
   .sidebar-social {
@@ -200,12 +200,12 @@ Color Generator
 ======================================================= */
 .color-show {
   height: 45vh;
-  width: 100%;
+  width: 90vw;
 }
 .color-container {
   height: 45vh;
-  margin: 3rem auto;
   background: rgba(223, 239, 252, 0.315);
+  margin-top: 2rem;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   place-items: center;
@@ -318,6 +318,8 @@ Counter
   background: rgba(223, 239, 252, 0.315);
   position: relative;
   margin-bottom: 10rem;
+  padding: 1rem;
+
 }
 
 .title {
@@ -326,6 +328,7 @@ Counter
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 20vh;
 }
 
@@ -345,8 +348,9 @@ Counter
   position: absolute;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 2rem;
   margin-top: 6rem;
+  padding: 0 2rem;
 }
 
 .btn {
