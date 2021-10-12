@@ -382,3 +382,13 @@ Counter
 .decrease:hover {
   background: rgba(255, 0, 0, 0.363);
 }
+
+@media screen and (max-width: 678px){
+  .btn{
+    height: 2rem;
+    width: 4rem;
+    font-size: 1rem;
+  }
+
+
+}
