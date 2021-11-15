@@ -279,6 +279,7 @@ Hex Generator
 }
 
 .hex-title {
+  margin-top: 1rem;
   font-size: 1.7rem;
   text-transform: capitalize;
 }
